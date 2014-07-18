@@ -1,0 +1,16 @@
+def main():
+
+    principal = eval(input("Enter the initial principal: "))
+    apr = eval(input("Enter the annual interest rate: "))
+    years = eval(input("Enter the number of years: "))
+    yearlyInvestment = eval(input("Enter the yearly investment: "))
+
+    
+
+    for i in range(1, years):
+        principal = (principal + yearlyInvestment) * (1 + apr)
+
+    print("The total accumulation after", years, "is", principal)
+        
+
+main()
